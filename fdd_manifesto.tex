@@ -2,6 +2,7 @@
 
 \usepackage{graphicx,xcolor}
 \usepackage{wrapstuff}
+\usepackage{pdfpages}
 
 \graphicspath{{media/}}
 
@@ -22,7 +23,6 @@
 }
 
 \newcommand{\principle}[2]{
-    % The formatting is somewhat fucked
     \fcolorbox{black}{gray!30}{
     \begin{minipage}{10cm}
         \raisebox{-.3\baselineskip}{
@@ -41,7 +41,8 @@
 }
 
 \begin{document}
-    \maketitle
+
+    \includepdf[pages=-]{cover.pdf}
 
     \myquote{
         We are uncovering better ways of developing
@@ -225,9 +226,6 @@
     \end{itemize}
     This approach successfully angers most,
     but there are better alternatives.
-    % NOTE to emil: how the fuck do i stop using "but"s/"however"s to transition between topics?
-    %               i seem to be conceptually incapable, like as if i was missing
-    %                some higher level understanding of english and compensating on a word level.
 
     The most prevalent was developed by Mozilla\footnote{
         The same company that gifted Rust to the Fear Driven community.
@@ -394,77 +392,3 @@ implied\_meaning\_of\_fdd:
     >pro FAGMAN satanism
     >developer exploitation
     >trying to force better results without better education or tools
-
-emilemilemil | Fear driven development creates 0% of the programs in production,
-thereby creating a astronomic 0% of bugs.
-
-SUICIDE NOTE QUOTE
-God is the greatest greatness; the most potent conception
-of absolute perfection, absolute power, and absolute
-goodness ever conceived of by the human mind. The
-conception of God is being beyond all conception. God is the
-power that overcomes all human probabilities and
-transcends even the greatest possibilities.
-But would it be even better if God actually existed?
-
-ORIGINAL AGILE BULLSHIT
-
-Manifesto for Agile Software Development
-
-We are uncovering better ways of developing
-software by doing it and helping others do it.
-Through this work we have come to value:
-
-Individuals and interactions over processes and tools
-Working software over comprehensive documentation
-Customer collaboration over contract negotiation
-Responding to change over following a plan
-
-That is, while there is value in the items on
-the right, we value the items on the left more.
-
-Principles behind the Agile Manifesto
-
-We follow these principles:
-
-Our highest priority is to satisfy the customer
-through early and continuous delivery
-of valuable software.
-
-Welcome changing requirements, even late in
-development. Agile processes harness change for
-the customer's competitive advantage.
-
-Deliver working software frequently, from a
-couple of weeks to a couple of months, with a
-preference to the shorter timescale.
-
-Business people and developers must work
-together daily throughout the project.
-
-Build projects around motivated individuals.
-Give them the environment and support they need,
-and trust them to get the job done.
-
-The most efficient and effective method of
-conveying information to and within a development
-team is face-to-face conversation.
-
-Working software is the primary measure of progress.
-
-Agile processes promote sustainable development.
-The sponsors, developers, and users should be able
-to maintain a constant pace indefinitely.
-
-Continuous attention to technical excellence
-and good design enhances agility.
-
-Simplicity--the art of maximizing the amount
-of work not done--is essential.
-
-The best architectures, requirements, and designs
-emerge from self-organizing teams.
-
-At regular intervals, the team reflects on how
-to become more effective, then tunes and adjusts
-its behavior accordingly. 
